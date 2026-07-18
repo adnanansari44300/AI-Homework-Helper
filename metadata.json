@@ -1,0 +1,6 @@
+{
+  "name": "AI Homework Helper",
+  "description": "An AI-powered homework solver and tutor with natural chat, OCR scanner, math solver, quiz generator, and custom study tools, complete with interactive web Android emulator and downloadable Kotlin Jetpack Compose Android Studio project.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

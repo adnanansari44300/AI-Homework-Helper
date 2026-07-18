@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #2563EB;
+  --color-brand-secondary: #3B82F6;
+  --color-brand-accent: #10B981;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Base body style */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc; /* Professional Polish: Slate-50 background */
+  color: #0f172a; /* Slate-900 text */
+  overflow-x: hidden;
+}
+
+/* Math / Markdown custom styles */
+.markdown-body {
+  line-height: 1.6;
+  font-size: 0.925rem;
+  color: #334155; /* slate-700 */
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: #1e3a8a; /* deep navy/blue */
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-body h3 {
+  font-size: 1.15rem;
+}
+.markdown-body h4 {
+  font-size: 0.95rem;
+}
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  list-style-type: decimal;
+}
+.markdown-body ul {
+  list-style-type: disc;
+}
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background-color: rgba(37, 99, 235, 0.08);
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+  color: #1d4ed8; /* blue-700 */
+  font-weight: 500;
+}
+.markdown-body pre {
+  background-color: #0f172a; /* dark background for code blocks is professional */
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+  border: 1px solid #1e293b;
+}
+.markdown-body pre code {
+  background-color: transparent;
+  color: #f8fafc;
+  padding: 0;
+}
